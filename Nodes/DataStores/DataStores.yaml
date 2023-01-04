@@ -1,0 +1,119 @@
+Name: DataStores
+Type: FolderType
+Children:
+- Name: ODBCDatabase1
+  Id: g=70dba97b55245358fc7fae3f4696aeb0
+  Type: ODBCStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: DataLogger1
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=10;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=10;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: VariableToSample1
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+  - Name: Type
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 2
+  - Name: Username
+    Type: PropertyType
+    DataType: String
+    Value: "test"
+  - Name: Password
+    Type: PropertyType
+    DataType: Password
+    SecretValue: QZhqJ9qqpPO6Xw9Zlwk09p6HF+xWILkfmrqhht/x4J0=
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=10;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=59
+    Direction: Forward
+  - Name: Server
+    Type: PropertyType
+    DataType: String
+    Value: "20.187.67.179"
+  - Name: Port
+    Type: PropertyType
+    DataType: UInt16
+    Value: 1433
+  - Name: Database
+    Type: PropertyType
+    DataType: String
+    Value: "master"
